@@ -2,31 +2,70 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/scripts.js"></script>
     <title>Personality Adjective</title>
   </head>
   <body>
-    <h1>Answer these 2 random questions and get a word to describe yourself</h1>
+    <div class="container">
+      <h1>Answer these 2 random questions and get a word to describe yourself</h1>
+      <div id="entry">
+        <form id="surveyForm">
 
-    <div class="form-check">
-      <input class="form-check-input" type="radio" id="quality" value="option1">
-      <label class="form-check-label" for="exampleRadios1">
-        Bravery
-      </label>
-      <input class="form-check-input" type="radio" id="quality" value="option1">
-      <label class="form-check-label" for="exampleRadios1">
-        Honesty
-      </label>
-      <input class="form-check-input" type="radio" id="quality" value="option1">
-      <label class="form-check-label" for="exampleRadios1">
-        Kindness
-      </label>
-    </div>
-    <div class="form-check">
-      <input class="form-check-input" type="radio" id="drunkFood" value="option2">
-      <label class="form-check-label" for="exampleRadios2">
-        Second default radio
-      </label>
-    </div>
+          <div class="form-group row">
+            <label for="quality" class="col-2 col-form-label">Your best quality</label>
+            <div class="col-10">
+              <label>
+                <input type="radio" name="quality" value="bravery">Bravery
+              </label>
+              <label>
+                <input type="radio" name="quality" value="honesty">Honesty
+              </label>
+              <label>
+                <input type="radio" name="quality" value="kindness">Kindness
+              </label>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="drunkFood" class="col-2 col-form-label">Your go to drunk food</label>
+            <div class="col-10">
+              <label>
+                <input type="radio" name="drunkFood" value="fries">Fries
+              </label>
+              <label>
+                <input type="radio" name="drunkFood" value="pizza">Pizza
+              </label>
+              <label>
+                <input type="radio" name="drunkFood" value="burritos">Burritos
+              </label>
+            </div>
+          </div>
 
+          <div class="row">
+            <div class="col-2">
+            </div>
+            <div class="col-10" id="submitButton">
+              <button type="submit" class="btn btn-info">Submit </button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div class="bravery">
+        <h2>Your result is: Bravery</h2>
+      </div>
+
+      <div class="honesty">
+        <h2>Your result is: Honesty</h2>
+      </div>
+
+      <div class="Kindness">
+        <h2>Your result is: Kindness</h2>
+      </div>
+
+    </div>
   </body>
 </html>
